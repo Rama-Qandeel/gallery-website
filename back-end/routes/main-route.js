@@ -1,7 +1,7 @@
 const express = require('express');
 const mainRouter = express.Router();
 const ofirebase=require("../firebase/setData")
-const {register}=require("../controllers/main-controller")
+const {register,login}=require("../controllers/main-controller")
 
 
 // mainRouter.post('/save', (req, res) => {
@@ -11,6 +11,7 @@ const {register}=require("../controllers/main-controller")
 // })
 
 mainRouter.post('/reg',register) 
+mainRouter.post('/login',login) 
     
   
  
