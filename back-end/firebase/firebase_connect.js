@@ -7,5 +7,9 @@ var config = {
   };
 
 const app=firebase.initializeApp(config);
+const auth=firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
 
-module.exports=app;
+module.exports={
+    app,
+    auth
+}
