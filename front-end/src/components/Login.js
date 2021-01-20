@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import axios from "axios";
 
 
 const Login = (props) => {
@@ -19,8 +19,26 @@ const Login = (props) => {
   };
 
   const handleSubmit = (event) => {
-    console.log('login');
     
+    axios
+      .post("http://localhost:5000/login",{email,password})
+      .then((response) => {
+        if (response.data === "There is no user record corresponding to this identifier. The user may have been deleted.") {
+          return alert("Invalid email");
+        }
+        if (response.data === "Wrong password.") {
+          return alert("Invalid password");
+        }
+        if (response.data) {
+          localStorage.setItem("token", response.data);
+          props.history.push("/profile");
+        }
+      })
+      .catch((error) => {
+        if (error) {
+          throw error;
+        }
+      });
   };
 
   return (
