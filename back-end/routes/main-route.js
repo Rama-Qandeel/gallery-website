@@ -12,6 +12,7 @@ const {register,login}=require("../controllers/main-controller")
 
 mainRouter.post('/reg',register) 
 mainRouter.post('/login',login) 
+
     
   
  
