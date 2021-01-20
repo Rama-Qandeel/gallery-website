@@ -9,6 +9,7 @@
     "axios": "^0.21.0",
     "firebase": "^8.2.3",
     "framer-motion": "^3.2.1",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-sass": "node-sass sass/main.scss src/App.css -w"
+
   },
   "eslintConfig": {
     "extends": "react-app"

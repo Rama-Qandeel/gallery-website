@@ -23,8 +23,8 @@ const Upload = () => {
   
   
   return (
-      <div>
-        <form>
+      <div className="section-about">
+        <form >
         <input type="file" onChange={handleChange} />
       <div >{ error }</div>
       <div>{file?(<p>{file.name}</p>):(null)}</div> 
