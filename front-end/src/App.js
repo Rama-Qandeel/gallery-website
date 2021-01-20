@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Upload from './components/Upload';
 import ImageGrid from './components/ImageGrid';
 import Login from './components/Login';
+import Register from "./components/Register"
 import './App.css';
 
 const App =()=> {
@@ -16,6 +17,15 @@ const App =()=> {
         render={(props) => (
           <div>
             <Login {...props} />
+          </div>
+        )}
+      /> 
+      <Route
+        exact
+        path="/register"
+        render={(props) => (
+          <div>
+            <Register {...props} />
           </div>
         )}
       /> 
