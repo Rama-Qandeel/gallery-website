@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Upload from './components/Upload';
+import ImageGrid from './components/ImageGrid';
 import './App.css';
 
 const App =()=> {
@@ -7,6 +8,7 @@ const App =()=> {
   return (
       <div>
        <Upload/>
+    <ImageGrid/>
       </div>
     );
   }

@@ -6,10 +6,11 @@ const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);
   const [url, setUrl] = useState(null);
-  const [name, setName] = useState(null);
+  const [name, setName] = useState("rama");
 
 useEffect(() => {
  const storageRef = projectStorage.ref(file.name);
+ const collectionRef = projectFirestore.collection('images');
 
  storageRef.put(file).on('state_changed', (snap) => {
     let percentage = (snap.bytesTransferred / snap.totalBytes) * 100;
@@ -18,11 +19,9 @@ useEffect(() => {
     setError(err);
   }, async () => {
     const url = await storageRef.getDownloadURL();
-    const createdAt = firebase.firestore.Timestamp.now();
-    
-    // console.log(projectFirestore.md.firebase_.firestore.CollectionReference);
-    
-    // await projectFirestore.md.firebase_.firestore.CollectionReference.add({ url, createdAt });
+    const createdAt = firebase.firestore.FieldValue.serverTimestamp();
+     collectionRef.add({ url, createdAt })
+    //  console.log(collectionRef.add({ url, createdAt,name })
     setUrl(url);
   });
 
