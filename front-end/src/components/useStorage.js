@@ -19,6 +19,7 @@ useEffect(() => {
   }, async () => {
     const url = await storageRef.getDownloadURL();
     const createdAt = firebase.firestore.Timestamp.now();
+    
     // console.log(projectFirestore.md.firebase_.firestore.CollectionReference);
     
     // await projectFirestore.md.firebase_.firestore.CollectionReference.add({ url, createdAt });
