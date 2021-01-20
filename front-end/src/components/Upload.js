@@ -28,7 +28,7 @@ const Upload = () => {
         <input type="file" onChange={handleChange} />
       <div >{ error }</div>
       <div>{file?(<p>{file.name}</p>):(null)}</div> 
-      <div>{file && <ProgressBar/>}</div> 
+      <div>{file && <ProgressBar file={file} setFile={setFile}/>}</div> 
         </form>
       </div>
     );
