@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../images/Gallery-Logo.png";
 import About from "./About";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Home = () => {
@@ -21,9 +22,10 @@ const Home = () => {
                 <a href="/register" class="btn btn--gray btn--animated">Let's start</a>
             </div>
       </header>
-      <mai>
+      <main>
         <About/>
-      </mai>
+      </main>
+      <Footer/>
     </div>
   );
 };
