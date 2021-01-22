@@ -14,7 +14,7 @@ const Home = () => {
                     <span class="heading-primary--sub">Create Your Most Beautiful Album.</span>
                 </h1>
 
-                <a href="#section-tours" class="btn btn--white btn--animated">Let's start</a>
+                <a href="#" class="btn btn--gray btn--animated">Let's start</a>
             </div>
       </header>
     </div>

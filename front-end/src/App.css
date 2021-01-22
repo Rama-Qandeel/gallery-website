@@ -19,7 +19,8 @@ body {
 
 .heading-primary {
   color: #f71e1e;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  margin-bottom: 1.5rem; }
   .heading-primary--main {
     display: block;
     font-size: 2rem;
@@ -53,6 +54,14 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 .header {
   background-image: url("../src/images/header.jpg");
   filter: grayscale(23%);
@@ -73,3 +82,52 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 100px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  background-color: #f14d4d;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn--gray {
+  background-color: #e6d9d9;
+  color: #f71e1e; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
+
+.btn-white::after {
+  background-color: #fff; }
+
+.btn:hover::after {
+  transform: scale(2);
+  opacity: 0; }
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards; }
