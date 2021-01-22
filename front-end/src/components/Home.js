@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../images/Gallery-Logo.png";
+import About from "./About";
 import Navbar from "./Navbar";
 
 const Home = () => {
@@ -17,9 +18,12 @@ const Home = () => {
                     <span class="heading-primary--main">Photo Albums</span>
                     <span class="heading-primary--sub">Create Your Most Beautiful Album.</span>
                 </h1>
-                <a href="#" class="btn btn--gray btn--animated">Let's start</a>
+                <a href="/register" class="btn btn--gray btn--animated">Let's start</a>
             </div>
       </header>
+      <mai>
+        <About/>
+      </mai>
     </div>
   );
 };
