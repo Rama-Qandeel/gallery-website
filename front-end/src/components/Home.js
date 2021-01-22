@@ -11,7 +11,7 @@ const Home = () => {
         <div class="header__text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main">Photo Albums</span>
-                    <span class="heading-primary--sub">Create your most beautiful album.</span>
+                    <span class="heading-primary--sub">Create Your Most Beautiful Album.</span>
                 </h1>
 
                 <a href="#section-tours" class="btn btn--white btn--animated">Let's start</a>

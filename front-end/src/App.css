@@ -12,7 +12,6 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
@@ -20,16 +19,39 @@ body {
 
 .heading-primary {
   color: #f71e1e;
-  text-transform: uppercase;
   backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
     font-size: 2rem;
-    font-weight: 700; }
+    font-weight: 700;
+    animation: moveInLeft 1s ease-out; }
   .heading-primary--sub {
     display: block;
     font-size: 1rem;
-    font-weight: 500; }
+    font-weight: 600;
+    animation: moveInRight 1s ease-out; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px); }
+  50% {
+    opacity: 0.5;
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100px); }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 .header {
   background-image: url("../src/images/header.jpg");
