@@ -76,9 +76,13 @@ body {
     left: 2rem; }
   .header__logo {
     height: 5rem; }
+  .header__nav-bar {
+    float: right;
+    margin-top: 2rem;
+    margin-right: 2rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -131,3 +135,20 @@ body {
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
+
+.navigaton {
+  list-style: none; }
+  .navigaton__item {
+    display: inline-block;
+    margin-right: 2rem; }
+  .navigaton a {
+    text-decoration: none;
+    color: #f71e1e;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .navigaton a:active,
+  .navigaton a:focus {
+    outline: none;
+    border-bottom: 0.1rem solid #f71e1e; }
+  .navigaton a:hover {
+    border-bottom: 0.1rem solid #f71e1e; }
