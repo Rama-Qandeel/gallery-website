@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/maxins";
 
 @import "base/base";
 @import "base/typography";
@@ -9,6 +10,7 @@
 @import "layout/header";
 
 @import "pages/home";
+@import "layout/grid";
 
 
 @import "components/button";

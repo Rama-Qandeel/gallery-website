@@ -46,3 +46,17 @@ body {
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
 }
+
+
+.paragraph {
+    
+    color:$color-black;
+    margin-top: 2rem;
+    font-size: 1rem;
+    width: 200px;
+    margin-left: 3rem;
+    text-align: center;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
