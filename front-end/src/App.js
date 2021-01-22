@@ -5,12 +5,21 @@ import ImageGrid from './components/ImageGrid';
 import Login from './components/Login';
 import Register from "./components/Register"
 import './App.css';
+import Home from './components/Home';
 
 const App =()=> {
  
   return (
     <Router>
-     
+     <Route
+        exact
+        path="/"
+        render={(props) => (
+          <div>
+           <Home/>
+          </div>
+        )}
+      />
      <Route
         exact
         path="/login"
@@ -40,9 +49,6 @@ const App =()=> {
           </div>
         )}
       />
-
-     
-      
       </Router>
     );
   }
