@@ -3,7 +3,7 @@ import useStorage from './useStorage';
 
 const ProgressBar = ({ file, setFile }) => {
     const { progress, url } = useStorage(file);  
-//   console.log(progress, url);
+  console.log(progress, url);
   
 useEffect(() => {
     if (url) {
@@ -13,10 +13,9 @@ useEffect(() => {
 
   
     return (
-        <div className="progress-bar"
-        initial={{ width: 0 }}
-        animate={{ width: progress + '%' }}
-      ></div>
+        <div className="progress-bar" style={{width:`${progress}%`}}>
+        <p className="progress-bar__download">{progress}%</p> 
+        </div>
       );
     } 
     

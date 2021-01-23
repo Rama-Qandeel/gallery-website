@@ -1,23 +1,42 @@
 .form{
-    margin: 30px auto 10px;
+    margin: 3rem auto 1rem;
     text-align: center;
 
 &__label{
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   border: 1px solid #4e4e4e;
   border-radius: 50%;
-  margin: 10px auto;
-  line-height: 30px;
+  margin: 1rem auto;
+  line-height: 3rem;
   color:$color-red-light-1;
   font-weight: bold;
   font-size: 24px;
 }
+&__label:hover{
+    background: $color-red-light;
+    color: white;
+    cursor: pointer;
+  }
 
     &__input{
         height: 0;
         width: 0;
         opacity:1;
+    }
+
+    &__output{
+        color: $color-black;
+        height:6rem;
+        font-size: 0.8rem;
+    }
+    &__error{
+color: $color-red-dark;
+    }
+    &__progress{
+        margin-right: 5rem;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
     }
 }
