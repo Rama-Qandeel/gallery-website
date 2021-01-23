@@ -70,3 +70,33 @@
     cursor: pointer;
   }
 }
+
+.btn__img {
+  margin-top: 3px;
+  text-align: center;
+
+ &-big{
+  border: none;
+  color: $color-red;
+  background-color: $color-white;
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+  }
+
+  &:hover{
+    transform: scale(1.2);
+  }
+ }
+
+
+ 
+
+}
+
+
+
+

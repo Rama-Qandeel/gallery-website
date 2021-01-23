@@ -15,8 +15,8 @@ const About=()=>{
                     <div class="col-1-of-2">
                         <p class="paragraph">
                         Create an album in minutes. 
-                        Relive your favorite photos anytime,
-                         as a photo book or on any device.
+                        Making something special
+                         to save your memories
                         </p>
                     </div>
                     <div class="col-1-of-2">

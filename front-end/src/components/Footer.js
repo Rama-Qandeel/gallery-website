@@ -2,12 +2,12 @@ import React from "react";
 import logo from "../images/Gallery-Logo.png";
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
        <div class="footer__logo-box">
                 <img src={logo} alt="Full logo" class="footer__logo"/>
             </div>
             <div class="row">
-                <div class="col-1-of-2">
+                <div class="col-1-of-2 ">
                    
                        Contact
                     </div>

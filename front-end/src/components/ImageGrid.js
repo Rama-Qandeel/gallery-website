@@ -4,7 +4,7 @@ import Popup from "./Popup"
 import { projectFirestore } from '../firebase/config';
 
 
-const ImageGrid = () => {
+const ImageGrid = ({setSelectedImg}) => {
   const { docs } = useFirestore('images');
 // console.log('docs',docs);
 
@@ -34,6 +34,9 @@ const render=docs.map(doc=>{
     </div>
    <div className="btn__img">
     <button className="btn__img-delete icon-basic-trashcan-full" onClick={deleteImage} id={doc.id} >
+</button>
+<button className="btn__img-big" onClick={() => setSelectedImg(doc.url)}>
++
 </button>
     </div>
     </div>

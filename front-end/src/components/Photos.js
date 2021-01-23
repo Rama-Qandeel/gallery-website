@@ -1,26 +1,28 @@
-import React from "react";
+import React,{useState} from "react";
 import useFirestore from './useFirestore';
 import Popup from "./Popup"
 import { projectFirestore } from '../firebase/config';
 
 
-const Photos = () => {
+const Photos = ({setSelectedImg}) => {
   const { docs } = useFirestore('images');
-
-
 
 const render=docs.map(doc=>{
     return <div key={doc.id}>  
-       <div className="img-wrap">
-      <img style={{height:"50px"}}src={doc.url} alt="uploaded pic"/>
+       <div className="img-wrap__3 ">
+      <img  style={{height:"50px"}}src={doc.url} alt="uploaded pic"/>
     </div>
+    <div className="btn__img">
+<button className="btn__img-big" onClick={() => setSelectedImg(doc.url)}>
++ 
+</button>
+</div>
     </div>
-
 })
 
   return (
     <div >
-  <div class="img-grid">
+  <div class="img-grid__3">
       {render}
       </div>
     </div>

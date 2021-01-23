@@ -9,9 +9,11 @@ import './icon-font.css'
 import Home from './components/Home';
 import Navbar2 from './components/Navbar2';
 import Photos from './components/Photos'
+import BigImage from './components/BigImage';
 
 const App =()=> {
- 
+  const [selectedImg, setSelectedImg] = useState(null);
+
   return (
     <Router>
      <Route
@@ -43,10 +45,15 @@ const App =()=> {
       /> 
 <Route
         exact
+
         path="/photos"
         render={(props) => (
           <div>
-           <Photos/>
+            <Navbar2/>
+           <Photos setSelectedImg={setSelectedImg}/>
+           { selectedImg && (
+        <BigImage selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+      )}
           </div>
         )}
       /> 
@@ -57,8 +64,10 @@ const App =()=> {
           <div>
             <Navbar2/>
             <Upload/>
-            <ImageGrid/>
-            
+            <ImageGrid setSelectedImg={setSelectedImg}/>
+            { selectedImg && (
+        <BigImage selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+      )}
           </div>
         )}
       />
