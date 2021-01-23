@@ -1,9 +1,10 @@
 .progress-bar{
     height: 5px;
     background: $color-grey-dark;
-    margin-top: 20px;
+    margin-top: 2rem;
     
     &__download{
-      color: green;
+      color: $color-black;
+      text-align: center;
     }
   }

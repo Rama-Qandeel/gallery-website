@@ -7,6 +7,7 @@ import Register from "./components/Register"
 import './App.css';
 import './icon-font.css'
 import Home from './components/Home';
+import Navbar2 from './components/Navbar2';
 
 const App =()=> {
  
@@ -45,8 +46,10 @@ const App =()=> {
         path="/profile"
         render={(props) => (
           <div>
-             <Upload/>
+            <Navbar2/>
+            <Upload/>
             <ImageGrid/>
+            
           </div>
         )}
       />

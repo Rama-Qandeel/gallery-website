@@ -1,4 +1,5 @@
 import React, { useState  } from 'react';
+import Navbar2 from './Navbar2';
 import ProgressBar from './ProgressBar';
 
 
@@ -23,8 +24,8 @@ const Upload = () => {
   
   
   return (
-      
-        <form className="form" >
+      <div >
+       <div><form className="form" >
         <h1 className="heading-secondary">Your Pictures</h1>
         <p className="paragraph-secondary">Upload Your Picture</p>
         <label className="form__label">
@@ -37,7 +38,8 @@ const Upload = () => {
       <div className="form__progress">{file && <ProgressBar file={file} setFile={setFile}/>}</div> 
        </div>
         </form>
-   
+        </div>
+        </div> 
     );
   };
 

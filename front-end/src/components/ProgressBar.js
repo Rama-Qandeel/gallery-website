@@ -13,9 +13,13 @@ useEffect(() => {
 
   
     return (
+      <div>
         <div className="progress-bar" style={{width:`${progress}%`}}>
-        <p className="progress-bar__download">{progress}%</p> 
         </div>
+       <div className="progress-bar__download">
+       <p >{progress}%</p> 
+       </div>
+       </div>
       );
     } 
     

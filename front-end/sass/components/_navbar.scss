@@ -23,3 +23,31 @@
     border-bottom: 0.1rem solid $color-red;
   }
 }
+
+.navigaton__2{
+  list-style: none;
+  background-color: $color-red-light;
+
+  &__item__2 {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 8px
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  a:active,
+  a:focus {
+    outline: none;
+    border-bottom: 0.1rem solid $color-white;
+  }
+
+  a:hover {
+    border-bottom: 0.1rem solid $color-white;
+  }
+}

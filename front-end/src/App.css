@@ -248,6 +248,25 @@ body {
   .navigaton a:hover {
     border-bottom: 0.1rem solid #f71e1e; }
 
+.navigaton__2 {
+  list-style: none;
+  background-color: #f14d4d; }
+  .navigaton__2__item__2 {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 8px; }
+  .navigaton__2 a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .navigaton__2 a:active,
+  .navigaton__2 a:focus {
+    outline: none;
+    border-bottom: 0.1rem solid #fff; }
+  .navigaton__2 a:hover {
+    border-bottom: 0.1rem solid #fff; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -315,4 +334,5 @@ body {
   background: #777;
   margin-top: 20px; }
   .progress-bar__download {
-    color: green; }
+    color: green;
+    text-align: center; }
