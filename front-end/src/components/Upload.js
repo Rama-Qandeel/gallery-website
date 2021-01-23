@@ -23,14 +23,21 @@ const Upload = () => {
   
   
   return (
-      <div className="section-about">
-        <form >
-        <input type="file" onChange={handleChange} />
+      
+        <form className="form" >
+        <h1 className="heading-secondary">Your Pictures</h1>
+        <p className="paragraph-secondary">Upload Your Picture</p>
+        <label className="form__label">
+        <input className="form__input" type="file" onChange={handleChange} />
+        <span>+</span>
+      </label>
+      <div className="output">
       <div >{ error }</div>
       <div>{file?(<p>{file.name}</p>):(null)}</div> 
       <div>{file && <ProgressBar file={file} setFile={setFile}/>}</div> 
+       </div>
         </form>
-      </div>
+   
     );
   };
 
