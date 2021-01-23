@@ -5,6 +5,7 @@ import ImageGrid from './components/ImageGrid';
 import Login from './components/Login';
 import Register from "./components/Register"
 import './App.css';
+import './icon-font.css'
 import Home from './components/Home';
 
 const App =()=> {

@@ -1,5 +1,5 @@
-.btn{
-  &,  
+.btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -10,28 +10,28 @@
     transition: all 0.2s;
     position: relative;
 
-border: none;
-cursor: pointer; 
-
+    border: none;
+    cursor: pointer;
   }
-  
+
   &:hover {
     background-color: $color-red-light;
     color: $color-white;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba($color-black, 0.2);
   }
-  &:active,&:focus {
+  &:active,
+  &:focus {
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba($color-black, 0.2);
   }
-  
+
   &--gray {
     background-color: $color-grey-light;
     color: $color-red;
   }
- 
+
   &::after {
     content: "";
     display: inline-block;
@@ -44,7 +44,7 @@ cursor: pointer;
     z-index: -1;
     transition: all 0.4s;
   }
-  
+
   &-white::after {
     background-color: $color-white;
   }
@@ -52,11 +52,21 @@ cursor: pointer;
     transform: scale(2);
     opacity: 0;
   }
-  
+
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
+}
+
+.btn__img {
+  margin-top: 3px;
+  text-align: center;
+
+  &-delete {
+    border: none;
+    color: $color-red;
+    background-color: $color-white;
+    cursor: pointer;
   }
-  
-  
+}

@@ -3,6 +3,7 @@ import useFirestore from './useFirestore';
 import Popup from "./Popup"
 import { projectFirestore } from '../firebase/config';
 
+
 const ImageGrid = () => {
   const { docs } = useFirestore('images');
 // console.log('docs',docs);
@@ -31,9 +32,11 @@ const render=docs.map(doc=>{
        <div className="img-wrap">
       <img style={{height:"50px"}}src={doc.url} alt="uploaded pic"/>
     </div>
-    <button onClick={deleteImage} id={doc.id} >Delete image</button>
+   <div className="btn__img">
+    <button className="btn__img-delete icon-basic-trashcan-full" onClick={deleteImage} id={doc.id} >
+</button>
     </div>
-    
+    </div>
   // }
 })
 

@@ -222,6 +222,15 @@ body {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
+.btn__img {
+  margin-top: 3px;
+  text-align: center; }
+  .btn__img-delete {
+    border: none;
+    color: #f71e1e;
+    background-color: #fff;
+    cursor: pointer; }
+
 .navigaton {
   list-style: none; }
   .navigaton__item {
