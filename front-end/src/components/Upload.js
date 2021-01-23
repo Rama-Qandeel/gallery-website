@@ -1,5 +1,4 @@
 import React, { useState  } from 'react';
-import Navbar2 from './Navbar2';
 import ProgressBar from './ProgressBar';
 
 

@@ -3,6 +3,7 @@ import logo from "../images/Gallery-Logo.png";
 import About from "./About";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Gallery from "./Gallery"
 
 const Home = () => {
   return (
@@ -24,8 +25,11 @@ const Home = () => {
       </header>
       <main>
         <About/>
+        <Gallery/>
       </main>
+      <footer>
       <Footer/>
+      </footer>
     </div>
   );
 };
