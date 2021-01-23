@@ -27,15 +27,21 @@ const render=docs.map(doc=>{
   // console.log('name',doc.name); 
   // if(doc.name==="rama"){
     return <div key={doc.id}>
+     
+       <div className="img-wrap">
       <img style={{height:"50px"}}src={doc.url} alt="uploaded pic"/>
-      <button onClick={deleteImage} id={doc.id} >Delete image</button>
     </div>
+    <button onClick={deleteImage} id={doc.id} >Delete image</button>
+    </div>
+    
   // }
 })
 
   return (
     <div >
+  <div class="img-grid">
       {render}
+      </div>
     </div>
   )
 }

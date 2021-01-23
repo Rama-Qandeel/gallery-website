@@ -20,10 +20,30 @@
         width: calc((100% - #{$gutter-horizontal}) / 2);
         
     }
-   
-
-    .col-1-of-4 {
-        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-    }
 
 }
+
+.img-grid{
+    margin: -4px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-gap:17px;
+    margin-bottom: 10px;
+  }
+  .img-wrap{
+    overflow: hidden;
+    height: 0;
+    padding: 34% 0;
+    position: relative;
+    
+
+    & img{
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 150%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+  }
