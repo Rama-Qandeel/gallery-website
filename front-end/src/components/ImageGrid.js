@@ -33,7 +33,7 @@ const render=docs.map(doc=>{
       <img style={{height:"50px"}}src={doc.url} alt="uploaded pic"/>
     </div>
    <div className="btn__img">
-    <button className="btn__img-delete icon-basic-trashcan-full" onClick={deleteImage} id={doc.id} >
+    <button className="btn__img-delete icon-basic-trashcan-full u-margin-right-small" onClick={deleteImage} id={doc.id} >
 </button>
 <button className="btn__img-big" onClick={() => setSelectedImg(doc.url)}>
 +

@@ -22,6 +22,7 @@ const render=docs.map(doc=>{
 
   return (
     <div >
+      <h1 className="heading-primary u-center-text u-margin-top-small">Our Gallery</h1>
   <div class="img-grid__3">
       {render}
       </div>
