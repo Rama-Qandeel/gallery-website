@@ -129,6 +129,10 @@ body {
   padding: 10rem 0;
   margin-top: -20vh; }
 
+.section-gallery {
+  height: 67vh;
+  background-color: #d4cfcf; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

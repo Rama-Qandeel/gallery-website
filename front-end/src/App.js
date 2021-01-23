@@ -8,6 +8,7 @@ import './App.css';
 import './icon-font.css'
 import Home from './components/Home';
 import Navbar2 from './components/Navbar2';
+import Photos from './components/Photos'
 
 const App =()=> {
  
@@ -40,7 +41,15 @@ const App =()=> {
           </div>
         )}
       /> 
-
+<Route
+        exact
+        path="/photos"
+        render={(props) => (
+          <div>
+           <Photos/>
+          </div>
+        )}
+      /> 
 <Route
         exact
         path="/profile"
