@@ -121,6 +121,9 @@ body {
 .u-margin-left {
   margin-left: 109px !important; }
 
+.u-margin-left-meduim {
+  margin-left: 50px; }
+
 .u-margin-right-small {
   margin-right: 2rem; }
 
@@ -206,9 +209,13 @@ body {
     min-width: 100%;
     min-height: 100%;
     max-width: 150%;
-    position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    border-radius: 3px;
+    position: absolute;
+    transition: all .2s; }
+  .img-wrap:hover {
+    transform: scale(1.05) translateY(-0.5rem); }
 
 .img-grid__2 {
   display: grid;
@@ -219,14 +226,19 @@ body {
   overflow: hidden;
   height: 0;
   padding: 34% 0;
-  position: relative; }
+  position: relative;
+  transition: all .2s; }
   .img-wrap__2 img {
     min-width: 100%;
     min-height: 100%;
     max-width: 150%;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    border-radius: 3px; }
+  .img-wrap__2:hover {
+    transform: scale(2.05) translateY(-0.5rem);
+    z-index: 40; }
 
 .img-grid__3 {
   margin: -4px 16px;
@@ -247,7 +259,11 @@ body {
     max-width: 150%;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    border-radius: 3px;
+    transition: all .2s; }
+  .img-wrap__3:hover {
+    transform: scale(1.05) translateY(-0.5rem); }
 
 .footer {
   background-color: #3c3737;
@@ -262,7 +278,7 @@ body {
     width: 5rem;
     height: auto; }
   .footer__conatct {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff26;
     display: inline-block;
     margin-left: 104px; }
     .footer__conatct__details {
@@ -273,7 +289,7 @@ body {
       .footer__conatct__details:not(:last-child) {
         margin-top: 1.5rem; }
   .footer__about {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff26;
     display: inline-block;
     margin-right: 104px; }
     .footer__about__details {
@@ -437,7 +453,7 @@ body {
       left: 6%;
       top: -2rem; }
     .composition__photo:hover {
-      outline: 0.5rem solid #f14d4d;
+      outline: 1px solid #f14d4d;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }

@@ -17,6 +17,7 @@ const BigImage = ({ setSelectedImg, selectedImg }) => {
     <div className="backdrop" onClick={handleClick}>
       <img src={selectedImg} alt=" pic"/>
       <button className="btn__close" onClick={handleClick2} >x</button>
+   
     </div>
   )
 }

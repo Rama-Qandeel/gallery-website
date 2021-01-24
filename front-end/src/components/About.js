@@ -18,6 +18,9 @@ const About=()=>{
                         Making something special
                          to save your memories
                         </p>
+                      <div className="">
+                        <a href="/register" class="btn btn--gray btn--animated u-margin-left-meduim">Let's start &rarr;</a>
+                        </div>
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
