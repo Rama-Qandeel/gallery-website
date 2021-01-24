@@ -31,6 +31,7 @@ const App =()=> {
         path="/login"
         render={(props) => (
           <div>
+            <Navbar/>
             <Login {...props} />
           </div>
         )}

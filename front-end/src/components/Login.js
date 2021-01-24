@@ -91,7 +91,7 @@ const Login = (props) => {
                 </button>
               </div>
               <div className="u-center-text">
-               <a href="/register" class="u-bottom-simple"> <span >Don't have an acount </span></a>
+               <a href="/register" class="u-bottom-simple"> <span >Don't have an acount. </span></a>
               </div>
             </div>
           </div>

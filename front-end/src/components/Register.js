@@ -101,14 +101,16 @@ const Register = (props) => {
                 </button>
               </div>
               <div className="u-center-text u-margin-top-very-small">
-               <a href="/login" class="u-bottom-simple"> <span >Already member?</span></a>
+                <a href="/login" class="u-bottom-simple">
+                  {" "}
+                  <span>Already member?</span>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     </div>
-
   );
 };
 export default Register;
