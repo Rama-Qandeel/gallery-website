@@ -30,7 +30,7 @@ useEffect(() => {
         path="/"
         render={(props) => (
           <div>
-           <Home/>
+           <Home token={token}/>
           </div>
         )}
       />
@@ -39,7 +39,7 @@ useEffect(() => {
         path="/login"
         render={(props) => (
           <div>
-            <Navbar/>
+            <Navbar />
             <Login {...props} />
           </div>
         )}
@@ -60,8 +60,8 @@ useEffect(() => {
         path="/photos"
         render={(props) => (
           <div>
-           {/* {token?(<Navbar2/>):(<Navbar/>)} */}
-           <Navbar2/>
+           {/* {token?(<Navbar2 />):(<Navbar/>)} */}
+           <Navbar2 token={token} />
            <Photos setSelectedImg={setSelectedImg}/>
            { selectedImg && (
         <BigImage selectedImg={selectedImg} setSelectedImg={setSelectedImg} />

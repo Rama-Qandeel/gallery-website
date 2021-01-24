@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import logo from "../images/Gallery-Logo.png";
 import About from "./About";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Gallery from "./Gallery"
 
-const Home = () => {
+
+const Home = ({token}) => {
+  // console.log('token',token);
+  
   return (
     <div>
       <header className="header">
@@ -13,7 +16,7 @@ const Home = () => {
           <img src={logo} alt="Logo" class="header__logo" />
         </div>
         <div className="header__nav-bar">
-        <Navbar/>
+        <Navbar token={token}/>
         </div>  
         <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -21,11 +24,11 @@ const Home = () => {
                     <span class="heading-primary--main">Photo Albums</span>
                     <span class="heading-primary--sub">Create Your Most Beautiful Album.</span>
                 </h1>
-                <a href="/register" class="btn btn--gray btn--animated">Let's start</a>
+            {!token?( <a href="/register" class="btn btn--gray btn--animated">Let's start</a>):(null)}   
             </div>
       </header>
       <main>
-        <About/>
+        <About token={token}/>
         <Gallery/>
       </main>
       <footer>

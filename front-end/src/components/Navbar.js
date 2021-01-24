@@ -1,19 +1,14 @@
 import React, { useState,useEffect } from 'react'
-import jwt_decode from "jwt-decode";
 
-const Navbar =()=> {
-  const[token,setToken]=useState(null)
+
+const Navbar =({token})=> {
 
   const logout=()=>{
     localStorage.clear()
   }
 
 
-  useEffect(() => {
-    if(localStorage.getItem("token")){
-      setToken (jwt_decode(localStorage.getItem("token")))
-   }
-  }, []);
+
         return (
           <nav>
      { !token?( <div>  <ul className="navigaton">

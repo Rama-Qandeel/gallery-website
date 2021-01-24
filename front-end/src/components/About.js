@@ -2,7 +2,8 @@ import React from "react";
 import about_1 from "../images/about1.jpg"
 import about_2 from "../images/about2.jpg"
 import about_3 from "../images/about3.jpg"
-const About=()=>{
+
+const About=({token})=>{
     return(
       
         <section class="section-about">
@@ -19,7 +20,7 @@ const About=()=>{
                          to save your memories
                         </p>
                       <div className="">
-                        <a href="/register" class="btn btn--gray btn--animated u-margin-left-meduim">Let's start &rarr;</a>
+                    {!token?(<a href="/register" class="btn btn--gray btn--animated u-margin-left-meduim">Let's start &rarr;</a>):(null)}    
                         </div>
                     </div>
                     <div class="col-1-of-2">
