@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Upload from './components/Upload';
 import ImageGrid from './components/ImageGrid';
@@ -11,10 +11,17 @@ import Navbar2 from './components/Navbar2';
 import Photos from './components/Photos'
 import BigImage from './components/BigImage';
 import Navbar from './components/Navbar';
-
+import jwt_decode from "jwt-decode";
 
 const App =()=> {
   const [selectedImg, setSelectedImg] = useState(null);
+const[token,setToken]=useState(null)
+
+useEffect(() => {
+  if(localStorage.getItem("token")){
+    setToken (jwt_decode(localStorage.getItem("token")))
+ }
+}, []);
 
   return (
     <Router>
@@ -53,7 +60,8 @@ const App =()=> {
         path="/photos"
         render={(props) => (
           <div>
-            <Navbar2/>
+           {/* {token?(<Navbar2/>):(<Navbar/>)} */}
+           <Navbar2/>
            <Photos setSelectedImg={setSelectedImg}/>
            { selectedImg && (
         <BigImage selectedImg={selectedImg} setSelectedImg={setSelectedImg} />

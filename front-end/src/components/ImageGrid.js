@@ -1,16 +1,16 @@
 import React from "react";
 import useFirestore from './useFirestore';
-import Popup from "./Popup"
 import { projectFirestore } from '../firebase/config';
-
+import jwt_decode from "jwt-decode";
 
 const ImageGrid = ({setSelectedImg}) => {
   const { docs } = useFirestore('images');
-// console.log('docs',docs);
+  const user = jwt_decode(localStorage.getItem("token"));
+
 
 const deleteImage=(props)=>{
-// console.log(props.target.id);
-projectFirestore
+
+  projectFirestore
   .collection("images")
   .doc(props.target.id)
   .delete()
@@ -25,10 +25,8 @@ projectFirestore
 
 
 const render=docs.map(doc=>{
-  // console.log('name',doc.name); 
-  // if(doc.name==="rama"){
+  if(doc.email===user.email){
     return <div key={doc.id}>
-     
        <div className="img-wrap">
       <img style={{height:"50px"}}src={doc.url} alt="uploaded pic"/>
     </div>
@@ -40,7 +38,7 @@ const render=docs.map(doc=>{
 </button>
     </div>
     </div>
-  // }
+  }
 })
 
   return (
