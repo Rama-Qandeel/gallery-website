@@ -12,6 +12,7 @@ import Photos from './components/Photos'
 import BigImage from './components/BigImage';
 import Navbar from './components/Navbar';
 
+
 const App =()=> {
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -74,6 +75,8 @@ const App =()=> {
           </div>
         )}
       />
+
+
       </Router>
     );
   }
