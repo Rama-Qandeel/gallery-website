@@ -15,7 +15,7 @@ const logout=()=>{
               </ul></div>):( <div><ul className="navigaton__2">
                  <li className="navigaton__2__item__2"><a href="/">Home</a></li>
                  <li className="navigaton__2__item__2"><a href="#">About</a></li>
-                 <li className="navigaton__2__item__2"><a href="#">Conatct</a></li>
+                 <li className="navigaton__2__item__2"><a href="#">Contact</a></li>
                  <li className="navigaton__2__item__2"><a href="/login">login</a></li>
               </ul></div>)}  
              

@@ -16,7 +16,14 @@ body {
     &__icon{
         font-size:50px !important;
         font-weight:400 !important;
-        margin-bottom:-20px
+        margin-bottom:-20px;
+
+        @include respond(phone) {
+            font-size:80px !important;
+            font-weight:700 !important;
+            margin-bottom:-20px;
+        }
+
     }
 
     &--main {
@@ -25,7 +32,10 @@ body {
         font-weight: 700;
     
         animation: moveInLeft 1s ease-out;
-
+        @include respond(phone) {
+            font-size: 4rem;
+            font-weight: 400;
+        }
     }
     
     &--sub {
@@ -48,6 +58,13 @@ body {
     letter-spacing: .2rem;
     transition: all .2s;
 
+    @include respond(phone) {
+        font-size: 3rem;
+        margin-top: 200px !important;
+    }
+
+  
+
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
@@ -62,6 +79,12 @@ body {
     width: 200px;
     margin-left: 3rem;
     text-align: center;
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+        width: 300px;
+        margin-left: 5rem;
+    }
     &:not(:last-child) {
         margin-bottom: 3rem;
     }

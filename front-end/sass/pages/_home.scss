@@ -7,6 +7,10 @@
 .section-gallery{
     height:67vh;
     background-color: $color-grey;
+    @include respond(phone) {
+        height:25vh;
+    }
+    
 }
 
 .section-register{
@@ -28,7 +32,10 @@ height: 100vh;
 
     height: 26rem;
     margin: 2px 57px;
-
+    @include respond(phone) {
+        height: 33rem;
+        margin: 17px 54px;
+    }
     &__container {
         width: 50%;
         padding: 2rem;

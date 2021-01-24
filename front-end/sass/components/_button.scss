@@ -13,7 +13,11 @@
     border: none;
     cursor: pointer;
   }
-
+  @include respond(phone) {
+    font-size: 27px !important;
+    font-weight: 700 !important;
+  
+}
   &:hover {
     background-color: $color-red-light;
     color: $color-white;
