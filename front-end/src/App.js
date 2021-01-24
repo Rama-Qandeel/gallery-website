@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Navbar2 from './components/Navbar2';
 import Photos from './components/Photos'
 import BigImage from './components/BigImage';
+import Navbar from './components/Navbar';
 
 const App =()=> {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -39,6 +40,7 @@ const App =()=> {
         path="/register"
         render={(props) => (
           <div>
+            <Navbar/>
             <Register {...props} />
           </div>
         )}
