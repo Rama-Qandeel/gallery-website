@@ -24,7 +24,7 @@ const Home = ({token}) => {
                     <span class="heading-primary--main">Photo Albums</span>
                     <span class="heading-primary--sub">Create Your Most Beautiful Album.</span>
                 </h1>
-            {!token?( <a href="/register" class="btn btn--gray btn--animated">Let's start</a>):(null)}   
+            {!token?( <a href="/register" class="btn btn--gray btn--animated">Register</a>):(null)}   
             </div>
       </header>
       <main>
