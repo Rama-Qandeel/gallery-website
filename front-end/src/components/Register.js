@@ -38,42 +38,51 @@ const handleSubmit = (event) => {
     }
   
     return (
-        <div>
-          <h1 class="heading-primary">
-            <span class="heading-primary-main">Register</span>
-          </h1>
-          <div>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={password}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="name"
-              placeholder="Display name"
-              value={name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button onClick={handleSubmit}>Register</button>
+        <div class="section-register">
+          <div class="row">
+          <div class="register">
+          <div class="register__form">
+           
+            </div>
+            </div>
+         </div>
         </div>
       );
     }
 export default Register;
+
+{/* <h1 class="heading-primary">
+<span class="heading-primary-main">Register</span>
+</h1>
+<div>
+<input
+  type="email"
+  name="email"
+  placeholder="Email"
+  value={email}
+  onChange={handleChange}
+  required
+/>
+</div>
+<div>
+<input
+  type="password"
+  name="password"
+  placeholder="Password"
+  value={password}
+  onChange={handleChange}
+  required
+/>
+</div>
+<div>
+<input
+  type="text"
+  name="name"
+  placeholder="Display name"
+  value={name}
+  onChange={handleChange}
+  required
+/>
+</div>
+<button onClick={handleSubmit}>Register</button>
+</div> */}
