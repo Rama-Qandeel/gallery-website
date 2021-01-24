@@ -102,6 +102,10 @@ body {
 .u-color {
   color: #fff; }
 
+.u-bottom-simple {
+  color: #000;
+  text-decoration: none; }
+
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
@@ -110,6 +114,9 @@ body {
 
 .u-margin-top-small {
   margin-top: 2rem; }
+
+.u-margin-top-very-small {
+  margin-top: -1.1rem; }
 
 .u-margin-right-small {
   margin-right: 2rem; }

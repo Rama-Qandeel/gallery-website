@@ -42,31 +42,61 @@ const Login = (props) => {
   };
 
   return (
-    <div>
-      <h1 class="heading-primary">
-        <span class="heading-primary-main">Login</span>
-      </h1>
-      <div>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={password}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <button onClick={handleSubmit}>Login</button>
+    <div class="section-register">
+      <div class="row">
+        <div class="register">
+          <div class="register__container">
+            <div class="register__form">
+              <div class="u-margin-bottom-small u-center-text">
+                <h2 class="heading-secondary">login</h2>
+              </div>              
+
+              <div class="register__form__group">
+                <input
+                  type="email"
+                  class="register__form__input"
+                  name="email"
+                  value={email}
+                  onChange={handleChange}
+                  placeholder="Email address"
+                  id="email"
+                  required
+                />
+                <label for="email" class="register__form__label">
+                  Email address
+                </label>
+              </div>
+
+              <div class="register__form__group">
+                <input
+                  type="password"
+                  class="register__form__input"
+                  placeholder="password"
+                  name="password"
+                  value={password}
+                  onChange={handleChange}
+                  id="password"
+                  required
+                />
+                <label for="password" class="register__form__label">
+                  Password
+                </label>
+              </div>
+              <div class="register__form__group u-center-text">
+                <button
+                  class="btn u-padding-btn u-gradient-color u-color"
+                  onClick={handleSubmit}
+                >
+                  login
+                </button>
+              </div>
+              <div className="u-center-text">
+               <a href="/register" class="u-bottom-simple"> <span >Don't have an acount </span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
     </div>
   );
 };

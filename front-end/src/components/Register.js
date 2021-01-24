@@ -26,7 +26,6 @@ const Register = (props) => {
         // console.log(response);
         if (response.data) {
           props.history.push("/login");
-          alert("create an account");
         } else {
           alert("email is already exists");
         }
@@ -101,11 +100,15 @@ const Register = (props) => {
                   Submit
                 </button>
               </div>
+              <div className="u-center-text u-margin-top-very-small">
+               <a href="/login" class="u-bottom-simple"> <span >Already member?</span></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>    
     </div>
+
   );
 };
 export default Register;
