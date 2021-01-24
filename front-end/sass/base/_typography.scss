@@ -12,6 +12,13 @@ body {
     backface-visibility: hidden;
     margin-bottom:1.5rem;
     
+
+    &__icon{
+        font-size:50px !important;
+        font-weight:400 !important;
+        margin-bottom:-20px
+    }
+
     &--main {
         display: block;
         font-size: 2rem;

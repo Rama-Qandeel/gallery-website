@@ -17,7 +17,7 @@ const Home = () => {
         </div>  
         <div class="header__text-box">
                 <h1 class="heading-primary">
-                  <p className="icon-basic-photo"></p>
+                  <p className="icon-basic-photo heading-primary--main heading-primary__icon"></p>
                     <span class="heading-primary--main">Photo Albums</span>
                     <span class="heading-primary--sub">Create Your Most Beautiful Album.</span>
                 </h1>

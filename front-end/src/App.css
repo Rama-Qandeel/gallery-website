@@ -21,6 +21,10 @@ body {
   color: #f71e1e;
   backface-visibility: hidden;
   margin-bottom: 1.5rem; }
+  .heading-primary__icon {
+    font-size: 50px !important;
+    font-weight: 400 !important;
+    margin-bottom: -20px; }
   .heading-primary--main {
     display: block;
     font-size: 2rem;
@@ -453,7 +457,7 @@ body {
       left: 6%;
       top: -2rem; }
     .composition__photo:hover {
-      outline: 1px solid #f14d4d;
+      outline: 0.3rem solid #f14d4d;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
