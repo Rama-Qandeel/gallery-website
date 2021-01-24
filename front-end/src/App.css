@@ -10,7 +10,7 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
@@ -34,7 +34,7 @@ body {
     font-size: 50px !important;
     font-weight: 400 !important;
     margin-bottom: -20px; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .heading-primary__icon {
         font-size: 80px !important;
         font-weight: 700 !important;
@@ -44,7 +44,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     animation: moveInLeft 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .heading-primary--main {
         font-size: 4rem;
         font-weight: 400; } }
@@ -64,10 +64,10 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 75em) {
     .heading-secondary {
       font-size: 3rem;
-      margin-top: 200px !important; } }
+      margin-top: -25pxpx; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -79,10 +79,10 @@ body {
   width: 200px;
   margin-left: 3rem;
   text-align: center; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 75em) {
     .paragraph {
-      font-size: 1.5rem;
-      width: 300px;
+      font-size: 2.5rem;
+      width: 346px;
       margin-left: 5rem; } }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
@@ -168,7 +168,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
   @media only screen and (max-width: 37.5em) {
     .header {
-      height: 75vh !important;
+      height: 69vh !important;
       clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%) !important; } }
   .header__logo-box {
     position: absolute;
@@ -201,9 +201,6 @@ body {
 .section-gallery {
   height: 67vh;
   background-color: #d4cfcf; }
-  @media only screen and (max-width: 37.5em) {
-    .section-gallery {
-      height: 25vh; } }
 
 .section-register {
   padding: 6rem 0;
@@ -502,7 +499,7 @@ body {
       top: -6rem;
       width: 162px;
       height: 134px; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 75em) {
         .composition__photo--p2 {
           right: 55px;
           top: -5rem;

@@ -18,7 +18,7 @@ body {
         font-weight:400 !important;
         margin-bottom:-20px;
 
-        @include respond(phone) {
+        @include respond(tab-land) {
             font-size:80px !important;
             font-weight:700 !important;
             margin-bottom:-20px;
@@ -32,7 +32,7 @@ body {
         font-weight: 700;
     
         animation: moveInLeft 1s ease-out;
-        @include respond(phone) {
+        @include respond(tab-land) {
             font-size: 4rem;
             font-weight: 400;
         }
@@ -58,9 +58,9 @@ body {
     letter-spacing: .2rem;
     transition: all .2s;
 
-    @include respond(phone) {
+    @include respond(tab-land) {
         font-size: 3rem;
-        margin-top: 200px !important;
+        margin-top:-25pxpx ;
     }
 
   
@@ -80,10 +80,10 @@ body {
     margin-left: 3rem;
     text-align: center;
 
-    @include respond(phone) {
-        font-size: 1.5rem;
-        width: 300px;
-        margin-left: 5rem;
+    @include respond(tab-land) {
+        font-size: 2.5rem;
+    width: 346px;
+    margin-left: 5rem;
     }
     &:not(:last-child) {
         margin-bottom: 3rem;

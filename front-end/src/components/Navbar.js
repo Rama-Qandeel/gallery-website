@@ -13,8 +13,8 @@ const Navbar =({token})=> {
           <nav>
      { !token?( <div>  <ul className="navigaton">
                  <li className="navigaton__item"><a href="/">Home</a></li>
-                 <li className="navigaton__item"><a href="#">About</a></li>
-                 <li className="navigaton__item"><a href="#">Contact</a></li>
+                 <li className="navigaton__item"><a href="/">About</a></li>
+                 <li className="navigaton__item"><a href="/">Contact</a></li>
                  <li className="navigaton__item"><a href="/login">Login</a></li>
               </ul></div>):( <div>  <ul className="navigaton">
                  <li className="navigaton__item"><a href="/">Home</a></li>
