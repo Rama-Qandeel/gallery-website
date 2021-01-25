@@ -7,19 +7,26 @@
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%) ;
   
-  @include respond(phone) {
-    height:69vh !important;
-    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%) !important;
+  @include respond(tab-land) { // width < 1200?
+    height: 90vh ;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%) ;
+}
+
+@include respond(tab-port) { // width < 900?
+  height: 80vh ;
+  clip-path: polygon(0 0, 100% 0, 100% 66vh, 0 100%) ;
+}
+
+@include respond(big-desktop) {
+  height: 85vh ;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%) ;
 }
 
   &__logo-box {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    @include respond(phone) {
-      top: 5rem !important;
-
-  }
+   
   }
   &__logo {
     height: 5rem;
@@ -30,10 +37,7 @@
     margin-top:2rem;
     margin-right: 2rem;
    
-    @include respond(phone) {
-      margin-top:4rem !important;
-
-  }
+    
   }
 
   &__text-box {

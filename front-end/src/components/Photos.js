@@ -1,7 +1,5 @@
 import React,{useState} from "react";
 import useFirestore from './useFirestore';
-import Popup from "./Popup"
-import { projectFirestore } from '../firebase/config';
 
 
 const Photos = ({setSelectedImg}) => {

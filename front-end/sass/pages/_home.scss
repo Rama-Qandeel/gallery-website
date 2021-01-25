@@ -2,9 +2,8 @@
     background-color: $color-grey-light-1;
     padding: 10rem 0;
     margin-top: -20vh;
-    @include respond(tab-land) {
-           }
-  
+    
+    
 }
 
 .section-gallery{
@@ -33,10 +32,7 @@ height: 100vh;
 
     height: 26rem;
     margin: 2px 57px;
-    @include respond(phone) {
-        height: 33rem;
-        margin: 17px 54px;
-    }
+    
     &__container {
         width: 50%;
         padding: 2rem;

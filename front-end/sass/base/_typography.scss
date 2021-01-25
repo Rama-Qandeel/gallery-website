@@ -1,5 +1,5 @@
 body {
-    // font-family: "Lato", sans-serif,"MyAlbumThin";
+    font-family: "Lato", sans-serif,"MyAlbumThin";
     font-weight: 400;
     /*font-size: 16px;*/
     line-height: 1.7;
@@ -14,15 +14,17 @@ body {
     
 
     &__icon{
-        font-size:50px !important;
-        font-weight:400 !important;
+        font-size:40px !important ;
+        font-weight:400 ;
         margin-bottom:-20px;
 
-        @include respond(tab-land) {
+      
+        @include respond(tab-land) { 
             font-size:80px !important;
-            font-weight:700 !important;
+            font-weight:700 ;
             margin-bottom:-20px;
         }
+      
 
     }
 
@@ -31,11 +33,7 @@ body {
         font-size: 2rem;
         font-weight: 700;
     
-        animation: moveInLeft 1s ease-out;
-        @include respond(tab-land) {
-            font-size: 4rem;
-            font-weight: 400;
-        }
+        
     }
     
     &--sub {
@@ -58,12 +56,22 @@ body {
     letter-spacing: .2rem;
     transition: all .2s;
 
-    @include respond(tab-land) {
-        font-size: 3rem;
-        margin-top:-25pxpx ;
-    }
+    @include respond(tab-land) { 
+        font-size: 3.4rem;
+        margin-top: 265px;
 
-  
+    }
+    
+    @include respond(tab-port) { 
+        font-size: 1.5rem;
+        margin-top: 12px;
+
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 1.2rem;
+    }
+ 
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -80,10 +88,15 @@ body {
     margin-left: 3rem;
     text-align: center;
 
-    @include respond(tab-land) {
-        font-size: 2.5rem;
-    width: 346px;
-    margin-left: 5rem;
+    @include respond(tab-land) { 
+        font-size: 3.4rem;
+        width: 400px;
+
+    }
+    @include respond(tab-port) { 
+        font-size: 1.5rem;
+        width: 200px;
+
     }
     &:not(:last-child) {
         margin-bottom: 3rem;
