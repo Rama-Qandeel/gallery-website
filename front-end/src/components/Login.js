@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const[errorEmail,setErrorEmail]=useState(null)
-  const[errorPassword,setErrorPassword]=useState(null)
-
+  const [errorEmail, setErrorEmail] = useState(null);
+  const [errorPassword, setErrorPassword] = useState(null);
 
   const handleChange = (event) => {
     if (event.target.name === "email") {
@@ -19,11 +17,13 @@ const Login = (props) => {
   };
 
   const handleSubmit = (event) => {
-    
     axios
-      .post("http://localhost:5000/login",{email,password})
+      .post("http://localhost:5000/login", { email, password })
       .then((response) => {
-        if (response.data === "There is no user record corresponding to this identifier. The user may have been deleted.") {
+        if (
+          response.data ===
+          "There is no user record corresponding to this identifier. The user may have been deleted."
+        ) {
           return alert("Invalid email");
         }
         if (response.data === "Wrong password.") {
@@ -49,7 +49,7 @@ const Login = (props) => {
             <div class="register__form">
               <div class="u-margin-bottom-small u-center-text">
                 <h2 class="heading-secondary">login</h2>
-              </div>              
+              </div>
 
               <div class="register__form__group">
                 <input
@@ -91,12 +91,15 @@ const Login = (props) => {
                 </button>
               </div>
               <div className="u-center-text">
-               <a href="/register" class="u-bottom-simple"> <span >Don't have an acount. </span></a>
+                <a href="/register" class="u-bottom-simple">
+                  {" "}
+                  <span>Don't have an acount. </span>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     </div>
   );
 };

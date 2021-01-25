@@ -5,21 +5,27 @@ const jwt = require("jsonwebtoken");
 const register = (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
-  const name=req.body.name;
-  
+  const name = req.body.name;
+
   firebase
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .then(({ user }) => {
-      firebase.auth().currentUser.updateProfile({
-        displayName: name
-    }).then(()=> {
-        // Update successful.
-        console.log(' Update successful.');  
-    }, (error)=> {
-        // An error happened.
-    });    
-      
+      firebase
+        .auth()
+        .currentUser.updateProfile({
+          displayName: name,
+        })
+        .then(
+          () => {
+            // Update successful.
+            console.log(" Update successful.");
+          },
+          (error) => {
+            // An error happened.
+          }
+        );
+
       res.json("Account successfully created ");
     })
     .catch((err) => {
@@ -38,7 +44,7 @@ const login = (req, res) => {
       console.log("user", user.user);
       const payload = {
         uid: user.user.uid,
-        displayName:user.user.displayName,
+        displayName: user.user.displayName,
         email,
       };
 
@@ -61,4 +67,4 @@ const login = (req, res) => {
     });
 };
 
-module.exports = {register, login};
+module.exports = { register, login };

@@ -21,7 +21,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif,"MyAlbumThin";
+  font-family: "Lato", sans-serif, "MyAlbumThin";
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
@@ -58,8 +58,8 @@ body {
   background-image: linear-gradient(to right, #f14d4d, #c71111);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
   @media only screen and (max-width: 75em) {
     .heading-secondary {
       font-size: 3.4rem;
@@ -262,7 +262,7 @@ body {
     left: 0;
     border-radius: 3px;
     position: absolute;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .img-wrap:hover {
     transform: scale(1.05) translateY(-0.5rem); }
 
@@ -276,7 +276,7 @@ body {
   height: 0;
   padding: 34% 0;
   position: relative;
-  transition: all .2s; }
+  transition: all 0.2s; }
   .img-wrap__2 img {
     min-width: 100%;
     min-height: 100%;
@@ -310,7 +310,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 3px;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .img-wrap__3:hover {
     transform: scale(1.05) translateY(-0.5rem); }
 
@@ -488,7 +488,7 @@ body {
     border-radius: 2px;
     position: absolute;
     z-index: 10;
-    transition: all .2s;
+    transition: all 0.2s;
     outline-offset: 1rem; }
     .composition__photo--p1 {
       left: 0;
@@ -557,14 +557,14 @@ body {
   font-size: 1rem;
   font-family: inherit;
   color: black;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 2px;
   background-color: rbga(red, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  transition: all .3s; }
+  transition: all 0.3s; }
   .register__form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -580,9 +580,9 @@ body {
   font-size: 1rem;
   font-weight: 700;
   margin-left: 2rem;
-  margin-top: -.3rem;
+  margin-top: -0.3rem;
   display: block;
-  transition: all .3s; }
+  transition: all 0.3s; }
 
 .register__form__input:placeholder-shown + .register__form__label {
   opacity: 0;
