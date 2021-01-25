@@ -27,7 +27,7 @@ const Photos = ({ setSelectedImg }) => {
       <h1 className="heading-primary u-center-text u-margin-top-small">
         Our Gallery
       </h1>
-      <div class="img-grid__3">{render}</div>
+      <div className="img-grid__3">{render}</div>
     </div>
   );
 };

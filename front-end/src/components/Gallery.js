@@ -16,7 +16,7 @@ const Gallery = () => {
 
   return (
     <div className="section-gallery">
-      <div class="img-grid__2">
+      <div className="img-grid__2">
         {render[0]}
         {render[1]}
         {render[3]}
@@ -31,7 +31,7 @@ const Gallery = () => {
         {render[12]}
       </div>
       <div className="u-center-text">
-        <a href="/photos" class="btn btn--gray btn--animated  ">
+        <a href="/photos" className="btn btn--gray btn--animated  ">
           More &rarr;
         </a>
       </div>

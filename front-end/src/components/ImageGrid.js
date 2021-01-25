@@ -47,7 +47,7 @@ const ImageGrid = ({ setSelectedImg }) => {
 
   return (
     <div>
-      <div class="img-grid">{render}</div>
+      <div className="img-grid">{render}</div>
     </div>
   );
 };

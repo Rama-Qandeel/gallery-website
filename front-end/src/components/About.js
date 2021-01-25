@@ -5,13 +5,13 @@ import about_3 from "../images/about3.jpg";
 
 const About = ({ token }) => {
   return (
-    <section class="section-about">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Experiencing memories</h2>
+    <section className="section-about">
+      <div className="u-center-text u-margin-bottom-big">
+        <h2 className="heading-secondary">Experiencing memories</h2>
       </div>
-      <div class="row">
-        <div class="col-1-of-2">
-          <p class="paragraph">
+      <div className="row">
+        <div className="col-1-of-2">
+          <p className="paragraph">
             Create an album in minutes. Making something special to save your
             memories
           </p>
@@ -19,29 +19,29 @@ const About = ({ token }) => {
             {!token ? (
               <a
                 href="/register"
-                class="btn btn--gray btn--animated u-margin-left-meduim"
+                className="btn btn--gray btn--animated u-margin-left-meduim"
               >
                 Let's start &rarr;
               </a>
             ) : null}
           </div>
         </div>
-        <div class="col-1-of-2">
-          <div class="composition">
+        <div className="col-1-of-2">
+          <div className="composition">
             <img
               src={about_1}
               alt="Photo 1"
-              class="composition__photo composition__photo--p1"
+              className="composition__photo composition__photo--p1"
             />
             <img
               src={about_2}
               alt="Photo 2"
-              class="composition__photo composition__photo--p2"
+              className="composition__photo composition__photo--p2"
             />
             <img
               src={about_3}
               alt="Photo 3"
-              class="composition__photo composition__photo--p3"
+              className="composition__photo composition__photo--p3"
             />
           </div>
         </div>

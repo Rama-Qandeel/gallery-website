@@ -11,22 +11,22 @@ const Home = ({ token }) => {
   return (
     <div>
       <header className="header">
-        <div class="header__logo-box">
+        <div className="header__logo-box">
           <img src={logo} alt="Logo" class="header__logo" />
         </div>
         <div className="header__nav-bar">
           <Navbar token={token} />
         </div>
-        <div class="header__text-box">
-          <h1 class="heading-primary">
+        <div className="header__text-box">
+          <h1 className="heading-primary">
             <p className="icon-basic-photo heading-primary--main heading-primary__icon"></p>
-            <span class="heading-primary--main">Photo Albums</span>
-            <span class="heading-primary--sub">
+            <span className="heading-primary--main">Photo Albums</span>
+            <span className="heading-primary--sub">
               Create Your Most Beautiful Album.
             </span>
           </h1>
           {!token ? (
-            <a href="/register" class="btn btn--gray btn--animated">
+            <a href="/register" className="btn btn--gray btn--animated">
               Register
             </a>
           ) : null}
