@@ -74,7 +74,7 @@ useEffect(() => {
         path="/profile"
         render={(props) => (
           <div>
-            <Navbar2/>
+            <Navbar2 token={token} />
             <Upload/>
             <ImageGrid setSelectedImg={setSelectedImg}/>
             { selectedImg && (

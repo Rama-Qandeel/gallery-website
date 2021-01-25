@@ -1,7 +1,14 @@
 .form {
   margin: 3rem auto 1rem;
   text-align: center;
-
+  
+  @include respond(tab-land) {
+    margin: -22rem auto 1rem;
+    }
+    
+    @include respond(tab-port) {
+      margin: 3rem auto 1rem;
+    }
   &__label {
     display: block;
     width: 3rem;

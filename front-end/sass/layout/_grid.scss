@@ -27,6 +27,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 17px;
   margin-bottom: 10px;
+  @include respond(tab-land) {
+    grid-template-columns: 1fr 1fr ;
+  }
+  @include respond(tab-port) {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
 }
 .img-wrap {
   overflow: hidden;
@@ -85,6 +91,19 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin-bottom: 10px;
+
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include respond(big-desktop) {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 
 .img-wrap__3 {

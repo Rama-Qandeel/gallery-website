@@ -32,6 +32,9 @@ const Navbar = ({ token }) => {
             <li className="navigaton__item">
               <a href="/">Home</a>
             </li>
+            <li className="navigaton__2__item__2">
+              <a href="/profile">my profile</a>
+            </li>
             <li className="navigaton__item">
               <a href="/photos">Gallery</a>
             </li>

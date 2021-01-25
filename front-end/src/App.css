@@ -70,7 +70,8 @@ body {
       margin-top: 12px; } }
   @media only screen and (min-width: 112.5em) {
     .heading-secondary {
-      font-size: 1.2rem; } }
+      font-size: 4.2rem;
+      margin-top: 221px; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -90,12 +91,22 @@ body {
     .paragraph {
       font-size: 1.5rem;
       width: 200px; } }
+  @media only screen and (min-width: 112.5em) {
+    .paragraph {
+      font-size: 1.5rem;
+      width: 200px; } }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
 .paragraph-secondary {
   color: #efb6b2;
   font-size: 1rem; }
+  @media only screen and (max-width: 75em) {
+    .paragraph-secondary {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .paragraph-secondary {
+      font-size: 1rem; } }
 
 @keyframes moveInLeft {
   0% {
@@ -174,8 +185,8 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
   @media only screen and (max-width: 75em) {
     .header {
-      height: 90vh;
-      clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); } }
+      height: 64vh;
+      clip-path: polygon(0 0, 100% 0, 100% 54vh, 0 100%); } }
   @media only screen and (max-width: 56.25em) {
     .header {
       height: 80vh;
@@ -209,6 +220,12 @@ body {
 .section-gallery {
   height: 67vh;
   background-color: #d4cfcf; }
+  @media only screen and (max-width: 75em) {
+    .section-gallery {
+      height: 46vh; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-gallery {
+      height: 67vh; } }
 
 .section-register {
   padding: 6rem 0;
@@ -222,6 +239,14 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   height: 26rem;
   margin: 2px 57px; }
+  @media only screen and (max-width: 75em) {
+    .register {
+      height: 34rem;
+      margin: 2px 57px; } }
+  @media only screen and (max-width: 56.25em) {
+    .register {
+      height: 26rem;
+      margin: 2px 57px; } }
   .register__container {
     width: 50%;
     padding: 2rem; }
@@ -248,6 +273,12 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 17px;
   margin-bottom: 10px; }
+  @media only screen and (max-width: 75em) {
+    .img-grid {
+      grid-template-columns: 1fr 1fr; } }
+  @media only screen and (max-width: 56.25em) {
+    .img-grid {
+      grid-template-columns: 1fr 1fr 1fr; } }
 
 .img-wrap {
   overflow: hidden;
@@ -296,6 +327,15 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin-bottom: 10px; }
+  @media only screen and (max-width: 75em) {
+    .img-grid__3 {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media only screen and (max-width: 56.25em) {
+    .img-grid__3 {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  @media only screen and (min-width: 112.5em) {
+    .img-grid__3 {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
 
 .img-wrap__3 {
   overflow: hidden;
@@ -498,20 +538,26 @@ body {
       top: -6rem;
       width: 162px;
       height: 134px; }
-      .composition__photo--p2--p3 {
-        left: 6%;
-        top: -2rem; }
-      .composition__photo--p2:hover {
-        outline: 0.3rem solid #f14d4d;
-        transform: scale(1.05) translateY(-0.5rem);
-        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-        z-index: 20; }
-    .composition__photo:hover .composition__photo__photo:not(:hover) {
-      transform: scale(0.95); }
+    .composition__photo--p3 {
+      left: 6%;
+      top: -2rem; }
+    .composition__photo:hover {
+      outline: 0.3rem solid #f14d4d;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .form {
   margin: 3rem auto 1rem;
   text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .form {
+      margin: -22rem auto 1rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .form {
+      margin: 3rem auto 1rem; } }
   .form__label {
     display: block;
     width: 3rem;

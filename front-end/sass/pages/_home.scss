@@ -7,6 +7,14 @@
 .section-gallery {
   height: 67vh;
   background-color: $color-grey;
+
+  @include respond(tab-land) {
+    height: 30vh;
+  }
+
+  @include respond(tab-port) {
+    height:67vh;
+  }
 }
 
 .section-register {
@@ -30,6 +38,16 @@
   height: 26rem;
   margin: 2px 57px;
 
+
+  @include respond(tab-land) {
+  height: 34rem;
+  margin: 2px 57px;
+  }
+
+  @include respond(tab-port) {
+    height: 26rem;
+    margin: 2px 57px;
+  }
   &__container {
     width: 50%;
     padding: 2rem;
